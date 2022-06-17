@@ -5,28 +5,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
-		<title>Player vs Player Game</title>
+		<title>Project-2: Player vs Player Game</title>
 	</head>
 
 	<body>
 
 		<div class="container">
-			<h1>Let's Play Game</h1>
-			<h1>
-				<span id="p1Score">0</span>
-				to
-				<span id="p2Score">0</span>
-			</h1>
+		<h1>Game for 2 player</h1>
+		<div class="row">
+			<div class="col-4">
+				<button class="btn btn-primary" id="random-number">Press here for Get a Random Number</button>
+			</div>
+			<div class="col-6">
+				<p>The lucky Number set for Player is: <span id="lucky-number"></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<button class="btn btn-primary" id="player-1-pick-number" disabled>Player 1: Press here</button>
+			</div>
+			<div class="col-6">
+				<p>Player 1 Number is: <span id="player-1"></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<button class="btn btn-primary"  id="player-2-pick-number" disabled>Player 2: Press here</button>
+			</div>
+			<div  class="col-6">
+				<p>Player 2 Number is: <span id="player-2"></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<button class="btn btn-primary" id="reset-btn">Reset</button>
+			</div>
+			<div class="col-8">
 
-			<p>Playing to: <span class="playingTo">0</span></p>
+			</div>
 			
-			<form>
-				<input type="number" id="inputScore">
-			</form>
-			<br />
-			<button class="btn btn-primary" id="p1Btn">Player-1</button>
-			<button class="btn btn-primary" id="p2Btn">Player-2</button>
-			<button id="resetBtn" class="btn btn-primary">Reset</button>
+		</div>
+		
 
 		</div>
 		<script src="main.js"></script>
